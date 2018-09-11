@@ -29,7 +29,7 @@ public class ExecutorCalcule {
         int iesireAdunare = unCalculator.aduna(i, j);
         System.out.println(iesireAdunare);
         
-        int iesireScadere = unCalculator.scade(12, 2);
+        int iesireScadere = unCalculator.scade(i, j);
         System.out.println(iesireScadere);
     }
     
