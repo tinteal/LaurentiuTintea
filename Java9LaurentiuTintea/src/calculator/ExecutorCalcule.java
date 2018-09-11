@@ -31,6 +31,13 @@ public class ExecutorCalcule {
         
         int iesireScadere = unCalculator.scade(i, j);
         System.out.println(iesireScadere);
+        
+        int iesireInmultire = unCalculator.inmulteste(i, j);
+        System.out.println(iesireInmultire);
+        
+        int iesireImpartire = unCalculator.imparte(i, j);
+        System.out.println(iesireImpartire);
+        
     }
     
     
