@@ -17,12 +17,13 @@ public class Ecran {
     public Ecran(Carcasa nouaStapana) {
         this.stapana = nouaStapana;
     }
-
+    
     public String getAfisaj() {
         return afisaj;
     }
 
     public void setAfisaj(String afisaj) {
+        
         switch (afisaj) {
             case "+":
                 operatiuneLocala('+');
@@ -32,23 +33,22 @@ public class Ecran {
                 break;
             case "*":
                 operatiuneLocala('*');
-                break;
+                break;    
             case "/":
                 operatiuneLocala('/');
-                break;
+                break;    
             case "=":
-                operatiuneLocala('=');
-                break;
-            default:
+                break;  
+            default:    
         }
         this.afisaj = afisaj;
     }
     /**
      * Private method for computation
      */
-    private void operatiuneLocala(char c) {
-            stapana.getAlu().getOperandUnu(Integer.getInteger(afisaj);
-            stapana.getAlu().setOperator('+');
-            afisaj = Character.toString(c);
-            }
+    private void operatiuneLocala(char c){
+        stapana.getAlu().setOperandUnu(Integer.getInteger(afisaj));
+        stapana.getAlu().setOperator(c);
+        afisaj = Character.toString(c);
+    }
 }
