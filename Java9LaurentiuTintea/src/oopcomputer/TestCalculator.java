@@ -5,6 +5,7 @@
  */
 package oopcomputer;
 
+import java.util.Scanner;
 /**
  *
  * @author Laurentiu
@@ -15,7 +16,7 @@ public class TestCalculator {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-       //creaza un calculator
+        //creaza un calculator
         Carcasa calculator = new Carcasa();
         // Apasam butoane pana apare un operator
         calculator.buton1.apasa();
@@ -28,7 +29,5 @@ public class TestCalculator {
         // Apasam butoane pana apare =
         calculator.butonEgal.apasa();
         // afisam rezultatul
-    
     }
-    
 }

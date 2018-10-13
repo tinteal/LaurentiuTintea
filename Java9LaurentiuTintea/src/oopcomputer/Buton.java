@@ -10,8 +10,9 @@ package oopcomputer;
  * @author Laurentiu
  */
 public class Buton {
+    
     private Character simbol;
-    private Carcasa stapana; 
+    private Carcasa stapana;
     
     public Buton(Character noulSimbol){
         simbol = noulSimbol;
@@ -20,10 +21,12 @@ public class Buton {
         simbol = noulSimbol;
         stapana = nouaCarcasa;
     }
+
+    /**
+     *
+     */
     public void apasa(){
         Ecran ecranTemporar = stapana.getEcran();
         ecranTemporar.setAfisaj(simbol.toString());
-      
-        
     }
 }

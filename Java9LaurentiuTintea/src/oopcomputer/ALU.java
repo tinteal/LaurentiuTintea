@@ -10,17 +10,18 @@ package oopcomputer;
  * @author Laurentiu
  */
 public class ALU {
+    
     private Integer operandUnu;
     private Integer operandDoi;
-    private Character operand;
+    private Character operator;
     private Integer rezultat;
 
-    public Character getOperand() {
-        return operand;
+    public Character getOperator() {
+        return operator;
     }
 
-    public void setOperand(Character operand) {
-        this.operand = operand;
+    public void setOperator(Character operator) {
+        this.operator = operator;
     }
 
     public Integer getOperandUnu() {
@@ -50,7 +51,7 @@ public class ALU {
     
     public void calculeaza(){
         
-        switch (operand){
+        switch (operator){
         
             case '+': 
                 rezultat = operandUnu + operandDoi;
@@ -67,9 +68,5 @@ public class ALU {
             default: 
                 System.out.println("Operatorul este incorect. Folositi +, -, * sau /");
         }
-    }
-
-    void setOperator(char c) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 }
